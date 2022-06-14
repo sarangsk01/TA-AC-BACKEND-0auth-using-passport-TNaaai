@@ -4,7 +4,7 @@ var User = require('../models/User');
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
-  console.log(req.session);
+  console.log(req.session, req.user);
   res.render('users');
 });
 
